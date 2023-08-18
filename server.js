@@ -19,6 +19,8 @@ app.all("*", async (c) => {
         case "/rating.js":
             path = "./rating.js"
             break
+        case "/test":
+            path = "./test.html"
     }
     const file_content = Deno.readFileSync(path);
     let file_text = new TextDecoder().decode(file_content);
